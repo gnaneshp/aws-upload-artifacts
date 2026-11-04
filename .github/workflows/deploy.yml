@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v7
-      - name: Load & cache dependencies 
+      - name: Load & cache dependencies  
         id: cache-deps
         uses: ./.github/actions/cached-deps
         with:
