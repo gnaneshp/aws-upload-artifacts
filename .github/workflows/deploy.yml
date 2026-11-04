@@ -69,6 +69,8 @@ jobs:
         run: |
             echo "Repository=${{ github.repository }}"
             echo "Ref=${{ github.ref }}"
+      - name: Debug OIDC
+        uses: github/actions-oidc-debugger@main
       - name: Get AWS permissions
         uses: aws-actions/configure-aws-credentials@v6.3.0
         with:
